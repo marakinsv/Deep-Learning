@@ -1,0 +1,30 @@
+Validation accuracy при обучении с нуля:
+Модель resnet18, обученная на занятии - 56,28
+Модель resnet18 с LR sheduler CosineAnnealingWarmRestarts - 48,41
+Модель resnet18 с LR shrduler MultiStepLR - 56,79
+Модель resnet18 с неправильной аугментацией - 29,94
+Модель mobilenet - 52,23
+
+Validation accuracy при feature extractor:
+Модель resnet18, обученная на занятии - 65,42
+Модель resnet18 с LR sheduler CosineAnnealingWarmRestarts - 71,02
+Модель resnet18 с LR shrduler MultiStepLR - 72,00
+Модель resnet18 с неправильной аугментацией - 38,79
+Модель mobilenet - 68,64
+
+Validation accuracy при обучении с нуля:
+Модель resnet18, обученная на занятии - 94,41
+Модель resnet18 с LR sheduler CosineAnnealingWarmRestarts - 93,84
+Модель resnet18 с LR shrduler MultiStepLR - 96,65
+Модель resnet18 с неправильной аугментацией - 87,26
+Модель mobilenet - 95,44
+
+Модель mobilenet при разных видах обучений дает примерно такой же результат, как и resnet18.
+При использовании LR sheduler результат где-то чуть лучше, где-то чуть хуже.
+При использовании искаженной аугментации качество значительно хуже, т.к. данные на трейне отличаются от данных на валидации.
+
+
+
+
+
+ 
